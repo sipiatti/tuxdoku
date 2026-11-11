@@ -1,0 +1,18 @@
+Package: tuxdoku
+Version: @VERSION@
+Architecture: all
+Maintainer: @MAINTAINER@
+Installed-Size: @INSTALLED_SIZE@
+Depends: python3 (>= 3.10), python3-pygame (>= 2.1)
+Section: games
+Priority: optional
+Description: cheerful penguin logic puzzle (Queens / Star Battle style)
+ Tuxdoku is a colourful, pastel logic puzzle game. The N x N board is
+ split into N coloured regions; hide exactly one penguin in every row,
+ every column and every region so that no two penguins touch, not even
+ diagonally. Every generated puzzle has exactly one solution.
+ .
+ Features mouse play (X marks, drag to mark), three lives per level,
+ hints earned with remaining lives, time-based scoring, growing board
+ sizes from 5x5 to 10x10, high scores, sound effects and music.
+ The user interface is in Hungarian.

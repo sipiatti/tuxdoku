@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="128" height="128">
+  <g fill="#ffffff">
+    <circle cx="50" cy="50" r="28"/>
+    <g id="t"><rect x="42" y="6" width="16" height="22" rx="4"/></g>
+    <use href="#t" transform="rotate(45 50 50)"/><use href="#t" transform="rotate(90 50 50)"/>
+    <use href="#t" transform="rotate(135 50 50)"/><use href="#t" transform="rotate(180 50 50)"/>
+    <use href="#t" transform="rotate(225 50 50)"/><use href="#t" transform="rotate(270 50 50)"/>
+    <use href="#t" transform="rotate(315 50 50)"/>
+  </g>
+  <circle cx="50" cy="50" r="11" fill="#b291ff"/>
+</svg>

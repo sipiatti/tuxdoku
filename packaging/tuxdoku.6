@@ -1,0 +1,69 @@
+.TH TUXDOKU 6 "2026-11-11" "tuxdoku @VERSION@" "Games"
+.SH NAME
+tuxdoku \- cheerful penguin logic puzzle (Queens / Star Battle style)
+.SH SYNOPSIS
+.B tuxdoku
+.RB [ \-\-fullscreen ]
+.RB [ \-\-mute ]
+.RB [ \-\-version ]
+.RB [ \-h | \-\-help ]
+.SH DESCRIPTION
+.B tuxdoku
+is a colourful logic puzzle. The N\(muN board is divided into N coloured
+regions. Hide exactly one penguin in every row, every column and every
+region so that no two penguins touch each other, not even diagonally.
+Each level gives three lives; placing a penguin on a wrong cell costs one.
+Lives left at the end of a level become hints for the next level
+(at most N\-2 hints at a time). The board grows from 5\(mu5 to 10\(mu10.
+The user interface is in Hungarian.
+.SH OPTIONS
+.TP
+.B \-\-fullscreen
+Start in fullscreen mode.
+.TP
+.B \-\-mute
+Do not open the audio device (no music, no sound effects).
+.TP
+.B \-\-version
+Print the version and exit.
+.TP
+.BR \-h ", " \-\-help
+Show a short help text and exit.
+.SH CONTROLS
+.TP
+.B Left click
+cycle a cell: empty, X mark, penguin, empty
+.TP
+.B Right click / drag
+toggle X marks (dragging marks or clears many cells)
+.TP
+.B Arrow keys, Space/Enter, X, P, Backspace
+move the cursor, cycle, X mark, penguin, clear
+.TP
+.B H
+use a hint
+.TP
+.B M
+music on/off
+.TP
+.BR S " or " N
+sound effects on/off
+.TP
+.B F11
+toggle fullscreen
+.TP
+.B Esc
+back to the menu
+.SH FILES
+.TP
+.I ~/.local/share/tuxdoku/progress.json
+progress, settings and high scores (honours
+.BR XDG_DATA_HOME ).
+.SH ENVIRONMENT
+.TP
+.B TUXDOKU_DATA_DIR
+override the directory of
+.IR progress.json .
+.SH AUTHOR
+Siposs Attila <sipiatti@gmail.com>. Created with vibe coding, with the help of Grok Bot. Code under the MIT (Expat) license; artwork and audio
+CC0\-1.0; Baloo 2 font under the SIL Open Font License 1.1.

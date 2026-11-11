@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Name=Tuxdoku
+Name[hu]=Tuxdoku
+GenericName=Logic Puzzle
+GenericName[hu]=Logikai játék
+Comment=Hide the penguins: one in every row, column and coloured region
+Comment[hu]=Rejtsd el a pingvineket: egyet minden sorba, oszlopba és színes területre
+Exec=tuxdoku
+Icon=tuxdoku
+Terminal=false
+Categories=Game;LogicGame;
+Keywords=puzzle;queens;star battle;penguin;logic;
+Keywords[hu]=fejtörő;logikai;pingvin;királynők;

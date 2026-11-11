@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tuxdoku"
+version = "0.2.0"
+description = "Vidám pingvines logikai játék (Queens / Star Battle stílus) – a cheerful penguin logic puzzle"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "Siposs Attila", email = "sipiatti@gmail.com" }]
+maintainers = [{ name = "Siposs Attila", email = "sipiatti@gmail.com" }]
+keywords = ["game", "puzzle", "logic", "queens", "star battle", "penguin", "pygame"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: Games/Entertainment :: Puzzle Games",
+    "Natural Language :: Hungarian",
+]
+# pygame 2.x (Debian/Ubuntu: python3-pygame) – pygame-ce works as well
+dependencies = ["pygame>=2.1"]
+
+[project.optional-dependencies]
+dev = ["pytest", "cairosvg", "fonttools", "numpy"]
+
+[project.scripts]
+tuxdoku = "tuxdoku.app:main"
+
+[tool.setuptools]
+packages = ["tuxdoku"]
+
+[tool.setuptools.package-data]
+tuxdoku = ["assets/fonts/*", "assets/icons/*.png", "assets/penguins/*.png", "assets/svg/*.svg", "assets/sounds/*.wav", "assets/music/*.ogg"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

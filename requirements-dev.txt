@@ -1,0 +1,5 @@
+-r requirements.txt
+pytest
+cairosvg     # only for tools/make_assets.py
+fonttools    # only if you re-derive the static Baloo 2 weights
+numpy        # only for tools/make_sounds.py (plus ffmpeg with libvorbis)

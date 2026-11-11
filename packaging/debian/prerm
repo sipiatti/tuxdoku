@@ -1,0 +1,10 @@
+#!/bin/sh
+set -e
+
+if command -v py3clean >/dev/null 2>&1; then
+	py3clean -p tuxdoku
+else
+	find /usr/share/tuxdoku -type d -name __pycache__ -prune -exec rm -rf {} +
+fi
+
+exit 0

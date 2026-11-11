@@ -1,0 +1,17 @@
+tuxdoku (0.2.0) unstable; urgency=medium
+
+  * Sound effects and two looping background music tracks (all CC0,
+    synthesized), music/effects volume sliders and mute toggles,
+    M / S keyboard shortcuts, settings screen, silent fallback when no
+    audio device is available.
+  * First Debian package.
+
+ -- Siposs Attila <sipiatti@gmail.com>  Wed, 11 Nov 2026 23:00:00 +0100
+
+tuxdoku (0.1.0) unstable; urgency=medium
+
+  * Initial release: Queens / Star Battle style penguin logic puzzle with
+    unique-solution generator, lives, hints, scoring, high scores and a
+    pastel pygame UI in Hungarian.
+
+ -- Siposs Attila <sipiatti@gmail.com>  Wed, 11 Nov 2026 18:00:00 +0100

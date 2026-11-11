@@ -1,0 +1,2 @@
+# runtime (or: sudo apt install python3-pygame)  –  pygame-ce>=2.4 also works
+pygame>=2.1

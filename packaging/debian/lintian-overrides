@@ -1,0 +1,8 @@
+# The game bundles its own OFL font (Baloo 2); it is not packaged in Debian/Ubuntu.
+tuxdoku: font-in-non-font-package [usr/share/tuxdoku/tuxdoku/assets/fonts/*]
+tuxdoku: font-outside-font-dir [usr/share/tuxdoku/tuxdoku/assets/fonts/*]
+# The OFL licence text is kept next to the bundled font, as the OFL requires it to travel with the font.
+tuxdoku: package-contains-documentation-outside-usr-share-doc [usr/share/tuxdoku/tuxdoku/assets/fonts/OFL.txt]
+# The real launcher is /usr/games/tuxdoku; /usr/bin/tuxdoku is only a compatibility symlink
+# so the command works even where /usr/games is not on PATH.
+tuxdoku: package-section-games-but-has-usr-bin
